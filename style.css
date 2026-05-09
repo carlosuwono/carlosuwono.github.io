@@ -1,7 +1,5 @@
 body {
     background-color: #101010;
-    padding-left: 80px;
-    padding-right: 80px;
 }
 
 h1 {color: yellow; 
@@ -29,9 +27,27 @@ h2 {color: whitesmoke;
 }
 
 p {color: whitesmoke; 
-    font-family: "andale-mono-mt-pro", monospace;
+    font-family: "chandler42regular", monospace;
     font-weight: 400;
     font-style: normal;
+}
+
+pre {color: whitesmoke; 
+    font-family: "chandler42regular", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70%;
+    line-height: 120%;}
+
+pre.yellow {color: yellow; 
+    font-family: "chandler42regular", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70%;
+    line-height: 120%;}
+
+div.padding {padding-left: 80px;
+    padding-right: 80px;
 }
 
 div.label {border-radius: 50px; 
@@ -45,7 +61,7 @@ div.label {border-radius: 50px;
     margin: 0.5em;
     width: fit-content;
     background-color: #101010;
-    font-family: "andale-mono-mt-pro", monospace;
+    font-family: "chandler42regular", monospace;
     font-weight: 400;
     font-style: normal;
     color: whitesmoke;
@@ -59,14 +75,19 @@ img.hero {border-radius: 12px;
     margin-bottom: 50px;
 }
 
-img.spaceship {width: 100%;
-    object-fit: contain;
-}
+img.negative {text-align: center;
+    transition: 1000ms ease;
+    width: 30%;
+    margin: 5px;}
+
+img.negative:hover {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
+    transition: 500ms ease;}
 
 div.half { 
     display: flex;
     flex-direction: row;
     width: 50%;
+    justify-content: center;
 }
 
 div.hero {display: flex; 
@@ -81,6 +102,26 @@ div.flex {display: flex;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+div.filmstrip {background-color: #291407;
+    padding: 5px; 
+    border-width: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div.negative {display: flex;
+    overflow:scroll
+}
+
+div.dashed {border-color: whitesmoke;
+    border-top-width: 10px;
+    border-top-style: dashed;
+    margin: 5px;
 }
 
 div.rowlist {display: flex; 
@@ -113,7 +154,7 @@ div.moviebox {width: 400px;
     margin: 15px;
 }
 
-div.title{font-family: "andale-mono-mt-pro", monospace;
+div.title{font-family: "chandler42regular", monospace;
     font-weight: 400;
     font-style: normal;
     color: whitesmoke;
@@ -146,14 +187,24 @@ div.starflex{display: flex;
     justify-content: space-between;
     width: 100%;
     padding-top: 50px;
+    height: fit-content;
 }
 
 div.stars {color: whitesmoke; 
-    font-family: "andale-mono-mt-pro", monospace;
+    font-family: "chandler42regular", monospace;
     font-weight: 600;
     font-style: normal;
     font-size: 20px;
     width: fit-content;
-    height: 10px;
+    height: fit-content;
     text-align: center;
+}
+
+div.white {background-color: #fdfbfb;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: yellow solid 5px;
+    border-bottom: yellow solid 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
