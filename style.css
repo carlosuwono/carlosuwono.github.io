@@ -104,24 +104,8 @@ div.flex {display: flex;
     margin-bottom: 50px;
 }
 
-div.filmstrip {background-color: #291407;
-    padding: 5px; 
-    border-width: 10px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 div.negative {display: flex;
-    overflow:scroll
-}
-
-div.dashed {border-color: whitesmoke;
-    border-top-width: 10px;
-    border-top-style: dashed;
-    margin: 5px;
+    overflow:scroll;
 }
 
 div.rowlist {display: flex; 
