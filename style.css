@@ -1,71 +1,88 @@
 body {
+    background-color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+
+div.hero {
+    background-color: black;
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    transition: 500ms ease;
+}
+
+div.hero.active {
     background-color: #101010;
+    margin: 0;
+    padding: 0;
+    transition: 500ms ease;
 }
 
-h1 {color: yellow; 
-    font-family: "manifold-extd-cf", sans-serif;
-    font-weight: 500;
-    font-style: italic;
+div.hero.yellow {
+    background-color: #FFDE21;
+    margin: 0;
+    padding: 0;
+    transition: 500ms ease;
+}
+
+div.fifths {height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: "chandler-42-regular", monospace;
+    font-weight: 400;
+    font-style: normal;
     line-height: 100%;
-    margin-left: 0.5em;
+    margin: 0;
+    padding: 0;
+    font-size: 100px;
 }
 
-h1.hero{font-size: 100px;
+div.center {margin-top: auto;
+    margin-bottom: auto;
+    width: auto;
 }
 
-h1.title{font-size: 50px;
+div.centered {width: 80%; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 75px;
 }
 
-h2 {color: whitesmoke; 
-    font-family: "manifold-extd-cf", sans-serif;
-    font-weight: 500;
-    font-style: regular;
-    line-height: 100%;
-    font-size: 30px;
-    margin-top: 0em;
-    margin-bottom: 0.2em;
+h1.black {color: #101010;
+}
+
+h1.white {color: whitesmoke;
+}
+
+div.yellow {color: #FFDE21;
 }
 
 p {color: whitesmoke; 
-    font-family: "chandler42regular", monospace;
+    font-family: "chandler-42-regular", monospace;
     font-weight: 400;
     font-style: normal;
 }
 
-pre {color: whitesmoke; 
-    font-family: "chandler42regular", monospace;
+div.subtitle {background-color:#101010;
+    color: whitesmoke; 
+    font-family: "chandler-42-regular", monospace;
     font-weight: 400;
     font-style: normal;
-    font-size: 70%;
-    line-height: 120%;}
-
-pre.yellow {color: yellow; 
-    font-family: "chandler42regular", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 70%;
-    line-height: 120%;}
-
-div.padding {padding-left: 80px;
-    padding-right: 80px;
+    text-align: center;
+    height: 40px;
+    margin: 0;
 }
 
-div.label {border-radius: 50px; 
-    border-color: yellow; 
-    border-style: solid; 
-    border-width: 2px;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 0.5em;
-    width: fit-content;
-    background-color: #101010;
-    font-family: "chandler42regular", monospace;
-    font-weight: 400;
-    font-style: normal;
-    color: whitesmoke;
+marquee {width: auto;}
+
+marquee.center {text-align: center;
+    height: 100%;
 }
+
+marquee.yellow {color: #FFDE21;}
 
 img.hero {border-radius: 12px; 
     border-color: yellow; 
@@ -77,23 +94,27 @@ img.hero {border-radius: 12px;
 
 img.negative {text-align: center;
     transition: 1000ms ease;
-    width: 30%;
-    margin: 5px;}
-
-img.negative:hover {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
-    transition: 500ms ease;}
-
-div.half { 
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: center;
+    width: 45%;
+    margin: 5px;
+    object-fit: contain;
 }
 
-div.hero {display: flex; 
-    flex-direction: row; 
+img.still {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);}
+
+img.negative:hover {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
+    transition: 500ms ease;
+}
+
+div.half {width: 50%;
+}
+
+div.thirty {width: 30%;
+}
+
+div.forty {width: 40%;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 div.flex {display: flex; 
@@ -138,7 +159,7 @@ div.moviebox {width: 400px;
     margin: 15px;
 }
 
-div.title{font-family: "chandler42regular", monospace;
+div.title{font-family: "chandler-42-regular", monospace;
     font-weight: 400;
     font-style: normal;
     color: whitesmoke;
@@ -165,25 +186,6 @@ img.moviebox {width: 400px;
     margin-bottom: 20px;
 }
 
-div.starflex{display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 50px;
-    height: fit-content;
-}
-
-div.stars {color: whitesmoke; 
-    font-family: "chandler42regular", monospace;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 20px;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-}
-
 div.white {background-color: #fdfbfb;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -191,4 +193,55 @@ div.white {background-color: #fdfbfb;
     border-bottom: yellow solid 5px;
     margin-top: 50px;
     margin-bottom: 50px;
+    color: black; 
+    font-family: "chandler-42-regular", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.filmtitle {
+    margin-top: 100px;
+}
+
+div.bottomborder {border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    display: flex;
+    flex-direction: row;
+    color: black; 
+    font-family: "chandler-42-regular", monospace;
+    font-weight: 400;
+    font-style: normal;
+    padding: 20px;
+}
+
+div.divider {border-right-width: 2px;
+    border-right-style: solid;
+    border-right-color: black;
+    padding: 0;
+    margin-right: 20px;
+    color: black; 
+    font-family: "chandler-42-regular", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+div.red {
+    color:red;
+}
+
+div.purple {
+    color:purple;
+}
+
+div.largefont {
+    font-size: 40px;
+}
+
+div.mediumfont{
+    font-size: 25px;
+}
+
+div.margintop {
+    margin-top:200px;
 }
