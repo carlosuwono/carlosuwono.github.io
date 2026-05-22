@@ -72,7 +72,7 @@ div.subtitle {background-color:#101010;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    height: 40px;
+    height: 100%;
     margin: 0;
 }
 
@@ -92,14 +92,16 @@ img.hero {border-radius: 12px;
     margin-bottom: 50px;
 }
 
+img.still {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
+    margin: auto;
+}
+
 img.negative {text-align: center;
     transition: 1000ms ease;
     width: 45%;
     margin: 5px;
     object-fit: contain;
 }
-
-img.still {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);}
 
 img.negative:hover {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
     transition: 500ms ease;
@@ -129,36 +131,6 @@ div.negative {display: flex;
     overflow:scroll;
 }
 
-div.rowlist {display: flex; 
-    flex-direction: row; 
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-div.moviehor {display: flex; 
-    flex-direction: row; 
-    width: 500px;
-    height: 150px;
-    border-radius: 12px; 
-    border-color: yellow; 
-    border-style: solid; 
-    border-width: 2px;
-    background-color: #101010;
-    margin: 15px;
-}
-
-div.moviebox {width: 400px;
-    height: 350px;
-    border-radius: 12px; 
-    border-color: yellow; 
-    border-style: solid; 
-    border-width: 2px;
-    background-color: #101010;
-    margin: 15px;
-}
-
 div.title{font-family: "chandler-42-regular", monospace;
     font-weight: 400;
     font-style: normal;
@@ -167,23 +139,6 @@ div.title{font-family: "chandler-42-regular", monospace;
     margin-bottom: auto;
     margin-left: 20px;
     margin-right: 20px;
-}
-
-img.moviehor {width: 200px;
-    object-fit: cover;
-    border-top-left-radius: 12px; 
-    border-bottom-left-radius: 12px; 
-}
-
-img.moviebox {width: 400px;
-    height: 275px;
-    object-fit: cover;
-    border-top-left-radius: 12px; 
-    border-top-right-radius: 12px;
-    border-bottom-color: yellow; 
-    border-bottom-style: solid; 
-    border-width: 2px;
-    margin-bottom: 20px;
 }
 
 div.white {background-color: #fdfbfb;
@@ -244,4 +199,9 @@ div.mediumfont{
 
 div.margintop {
     margin-top:200px;
+}
+
+div.flex {display: flex;
+    flex-direction: row;
+    background-color: black;
 }
