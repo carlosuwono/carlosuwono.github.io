@@ -1,29 +1,16 @@
 body {
-    background-color: whitesmoke;
+    background-color: #f2f0ec;
     padding: 0;
     margin: 0;
+    font-family: "chandler-42-regular", monospace;
+    font-weight: 400;
+    font-style: normal;
 }
 
-div.hero {
-    background-color: black;
-    color: whitesmoke;
+div.hero {color: whitesmoke;
     margin: 0;
     padding: 0;
-    transition: 500ms ease;
-}
-
-div.hero.active {
-    background-color: #101010;
-    margin: 0;
-    padding: 0;
-    transition: 500ms ease;
-}
-
-div.hero.yellow {
-    background-color: #FFDE21;
-    margin: 0;
-    padding: 0;
-    transition: 500ms ease;
+    height: 100vh;
 }
 
 div.fifths {height: 20vh;
@@ -72,17 +59,16 @@ div.subtitle {background-color:#101010;
     font-weight: 400;
     font-style: normal;
     text-align: center;
-    height: 100%;
     margin: 0;
 }
 
-marquee {width: auto;}
-
 marquee.center {text-align: center;
     height: 100%;
+    width: auto;
 }
 
-marquee.yellow {color: #FFDE21;}
+marquee.yellow {color: #FFDE21;
+}
 
 img.hero {border-radius: 12px; 
     border-color: yellow; 
@@ -92,19 +78,35 @@ img.hero {border-radius: 12px;
     margin-bottom: 50px;
 }
 
-img.still {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
-    margin: auto;
+img.after {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
+    transition: 1000ms ease;
 }
 
-img.negative {text-align: center;
+img.before {margin: auto;
+    object-fit: cover;
+}
+
+img.high {height: 100%;
+}
+
+img.wide {width: 45%;
+}
+
+img.strip {width: 33%;
+object-fit: contain;
+margin-bottom: 5px;
+margin-top: 5p;
+}
+
+img {text-align: center;
     transition: 1000ms ease;
-    width: 45%;
-    margin: 5px;
-    object-fit: contain;
 }
 
 img.negative:hover {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
     transition: 500ms ease;
+}
+
+div.seventy {width: 70%;
 }
 
 div.half {width: 50%;
@@ -114,17 +116,12 @@ div.thirty {width: 30%;
 }
 
 div.forty {width: 40%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 div.flex {display: flex; 
     flex-direction: row; 
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 div.negative {display: flex;
@@ -141,17 +138,14 @@ div.title{font-family: "chandler-42-regular", monospace;
     margin-right: 20px;
 }
 
-div.white {background-color: #fdfbfb;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-top: yellow solid 5px;
-    border-bottom: yellow solid 5px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: black; 
-    font-family: "chandler-42-regular", monospace;
-    font-weight: 400;
-    font-style: normal;
+div.filmstrip {display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+margin-left: 50px;
+margin-right: 50px;
+margin-top: 250px;
+margin-bottom: 250px;
 }
 
 div.filmtitle {
@@ -160,10 +154,10 @@ div.filmtitle {
 
 div.bottomborder {border-bottom-width: 2px;
     border-bottom-style: solid;
-    border-bottom-color: black;
+    border-bottom-color: #101010;;
     display: flex;
     flex-direction: row;
-    color: black; 
+    color: #101010;; 
     font-family: "chandler-42-regular", monospace;
     font-weight: 400;
     font-style: normal;
@@ -172,7 +166,7 @@ div.bottomborder {border-bottom-width: 2px;
 
 div.divider {border-right-width: 2px;
     border-right-style: solid;
-    border-right-color: black;
+    border-right-color: #101010;;
     padding: 0;
     margin-right: 20px;
     color: black; 
@@ -198,10 +192,41 @@ div.mediumfont{
 }
 
 div.margintop {
-    margin-top:200px;
+    margin-top: 200px;
+}
+
+div.marginbot {
+    margin-bottom: 25px;
 }
 
 div.flex {display: flex;
     flex-direction: row;
-    background-color: black;
+}
+
+div.blackbg {background-color: #101010;;
+}
+
+div.quote {text-align: center;
+    height: 400px;
+}
+
+div.padding {padding-left: 100px;
+    padding-right: 100px;
+}
+
+p.black {color: #101010;
+}
+
+div.overflow {display: flex;
+    overflow: scroll;
+}
+
+mark {background-color: #FFDE21;}
+
+div.colophon {background-color: #101010;
+    color: #FFDE21;
+    height: 200px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
 }
