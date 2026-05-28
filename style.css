@@ -90,6 +90,7 @@ img.high {height: 100%;
 }
 
 img.wide {width: 45%;
+    margin: 5px;
 }
 
 img.strip {width: 33%;
@@ -116,6 +117,9 @@ div.thirty {width: 30%;
 }
 
 div.forty {width: 40%;
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap;
 }
 
 div.flex {display: flex; 
@@ -126,16 +130,6 @@ div.flex {display: flex;
 
 div.negative {display: flex;
     overflow:scroll;
-}
-
-div.title{font-family: "chandler-42-regular", monospace;
-    font-weight: 400;
-    font-style: normal;
-    color: whitesmoke;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 20px;
-    margin-right: 20px;
 }
 
 div.filmstrip {display: flex;
