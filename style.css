@@ -119,6 +119,9 @@ img {text-align: center;
     object-fit: cover;
 }
 
+img.ratio {aspect-ratio: 16 / 9;
+}
+
 img.negative:hover {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
     transition: 500ms ease;
 }
@@ -260,3 +263,21 @@ div.spacebetween {justify-content: space-between;
 div.padded {padding-left: 35px;
     padding-right: 35px;
 }
+
+div.flexdown {display: flex;
+    flex-direction: column;
+}
+
+div.aligncenter {text-align: center;
+}
+
+p.mediumfont {font-size: 25px;}
+
+p.margintop {margin-top: 15px;}
+
+div.medmargintop {margin-top: 50px;}
+
+div.medmarginbot {margin-bottom: 100px;}
+
+div.moviedesc {padding-right: 2em;
+padding-left: 0.5em;}

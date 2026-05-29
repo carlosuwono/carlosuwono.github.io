@@ -1,10 +1,10 @@
 window.addEventListener("load", (event) => {
   console.log("page is fully loaded");
 
-let hour = 00;
-let minute = 00;
-let second = 00;
-let count = 00;
+let hour = 0;
+let minute = 0;
+let second = 0;
+let count = 0;
 
 window.onload = stopWatch()
 
