@@ -7,6 +7,20 @@ body {
     font-style: normal;
 }
 
+div.nav {position: fixed;
+    display:flex;
+    width:100%;
+    mix-blend-mode:difference;
+    color:whitesmoke;
+    font-size: 20px;
+    z-index: 9;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: whitesmoke;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
 div.hero {color: whitesmoke;
     margin: 0;
     padding: 0;
@@ -84,24 +98,25 @@ img.after {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
 }
 
 img.before {margin: auto;
-    object-fit: cover;
 }
 
 img.high {height: 100%;
 }
 
-img.wide {width: 45%;
+img.wide {width: 48%;
     margin: 5px;
+    aspect-ratio: 16 / 9;
 }
 
 img.strip {width: 33%;
-object-fit: contain;
-margin-bottom: 5px;
-margin-top: 5p;
+    object-fit: contain;
+    margin-bottom: 5px;
+    margin-top: 5p;
 }
 
 img {text-align: center;
     transition: 1000ms ease;
+    object-fit: cover;
 }
 
 img.negative:hover {filter: invert(1) brightness(50%) contrast(750%) sepia(25%);
@@ -115,6 +130,12 @@ div.half {width: 50%;
 }
 
 div.thirty {width: 30%;
+}
+
+div.seventy {width: 70%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 div.forty {width: 40%;
@@ -134,13 +155,13 @@ div.negative {display: flex;
 }
 
 div.filmstrip {display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: space-between;
-margin-left: 50px;
-margin-right: 50px;
-margin-top: 250px;
-margin-bottom: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 250px;
+    margin-bottom: 250px;
 }
 
 div.filmtitle {
@@ -194,6 +215,10 @@ div.marginbot {
     margin-bottom: 25px;
 }
 
+div.navitem {margin-left: 50px;
+    margin-right: 50px;
+}
+
 div.flex {display: flex;
     flex-direction: row;
 }
@@ -202,7 +227,7 @@ div.blackbg {background-color: #101010;;
 }
 
 div.quote {text-align: center;
-    height: 400px;
+    height: 500px;
 }
 
 div.padding {padding-left: 100px;
@@ -226,6 +251,12 @@ div.colophon {background-color: #101010;
     padding-top: 20px;
 }
 
-div.right {text-align: right;}
+div.right {text-align: right;
+}
 
-div.spacebetween {justify-content: space-between;}
+div.spacebetween {justify-content: space-between;
+}
+
+div.padded {padding-left: 35px;
+    padding-right: 35px;
+}
