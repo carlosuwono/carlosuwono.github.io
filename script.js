@@ -16,6 +16,9 @@ document.getElementById("TBFAPQ").addEventListener("mouseenter", TBFAPQ);
 document.getElementById("GOQ").addEventListener("mouseenter", GOQ);
 document.getElementById("BPQ").addEventListener("mouseenter", BPQ);
 document.getElementById("TCTQ").addEventListener("mouseenter", TCTQ);
+document.getElementById("PUMZI").addEventListener("mouseenter", PUMZI);
+document.getElementById("SD").addEventListener("mouseenter", SD);
+document.getElementById("NR").addEventListener("mouseenter", NR);
 
 function stopWatch() {
         count++;
@@ -102,6 +105,21 @@ function BPQ() {
 
 function TCTQ() {
   document.getElementById("TCTQ").classList.add("after");
+  console.log("mouse enter")
+}
+
+function PUMZI() {
+  document.getElementById("PUMZI").classList.add("after");
+  console.log("mouse enter")
+}
+
+function SD() {
+  document.getElementById("SD").classList.add("after");
+  console.log("mouse enter")
+}
+
+function NR() {
+  document.getElementById("NR").classList.add("after");
   console.log("mouse enter")
 }
 
